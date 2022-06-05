@@ -9,7 +9,7 @@ font pango:RobotoMono Nerd Font Regular 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec alacritty -o window.opacity=0.6
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -162,3 +162,8 @@ bindsym $mod+Ctrl+Shift+Left resize grow width 10 px or 10 ppt
 
 # screenshot
 bindsym $mod+P exec flameshot gui
+
+# Custom application startup
+
+# assign applications to workspaces
+for_window [class="Firefox-esr"] move to workspace 2
