@@ -104,3 +104,7 @@ alias c='xclip -selection clipboard'
 p() {
 	PS1="%B%F{green}➜  %B%F{#03fcd0}% $1 %{$reset_color%}"
 }
+
+server() {
+        python3 -m http.server $1
+}
